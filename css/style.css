@@ -66,8 +66,8 @@ p {
 .container {
   max-width: 1920px;
   margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 27px;
+  padding-right: 95px;
 }
 
 /*-------- header --------*/
@@ -78,7 +78,7 @@ p {
 }
 
 .header__container {
-  padding: 22px 0 ;
+  padding: 27px 0 16px 0;
   justify-content: space-between;
 }
 
@@ -457,7 +457,7 @@ p {
 }
 
 .footer__nav-item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 90px;
 }
 
 .footer__nav-link {
@@ -505,6 +505,10 @@ p {
 
 .footer__links-mob {
   display: none;
+}
+
+.footer__links {
+  text-align: center;
 }
 
 /*-------- modal --------*/
@@ -712,7 +716,7 @@ p {
 }
 
 .descr__breadcrumb {
-  margin-bottom: 30px;
+  margin-bottom: 9px;
 }
 
 .descr__breadcrumb-item:not(:last-child) {
@@ -766,7 +770,8 @@ p {
 
 .header__logo-apt {
   position: absolute;
-  left: 40px;
+  left: 61px;
+  top: 0;
 }
 
 .nav-apt {
@@ -777,6 +782,7 @@ p {
 
 .slider__center {
   background-image: url('../img/rectanglebg.svg');
+  background-size: 72%;
   background-repeat: no-repeat;
   background-position: right bottom;
   padding-bottom: 54px;
@@ -784,16 +790,17 @@ p {
 }
 
 .slider__left {
-  max-width: 58%
+  max-width: 60%
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-  top: 95%;
+  top: 93%;
+  width: 45px
 }
 
 .swiper-button-prev {
-  left:40%
+  left:36%
 }
 
 .swiper-button-next{
@@ -801,7 +808,8 @@ p {
 }
 
 .swiper-pagination-fraction {
-  top: 93%;
+  left: -2%;
+  top: 91%;
   color: #685C56;
   font-family: 'Jost';
   font-size: 30px;
@@ -811,7 +819,7 @@ p {
 }
 
 .slider__right {
-  padding-left: 40px;
+  padding-left: 27px;
 }
 
 .slider__right-btn-card {
@@ -832,7 +840,7 @@ p {
 }
 
 .slider__right-img {
-  margin-bottom: 33px;
+  margin-bottom: 23px;
 }
 
 .slider__right-p {
@@ -952,17 +960,17 @@ p {
 /*-------- apttext --------*/
 
 .apttext__container {
-  padding-top: 38px;
-  padding-bottom: 50px;
+  padding-top: 34px;
+  padding-bottom: 23px;
 }
 
 .apttext__left {
-  max-width: 59%;
-  padding: 29px 75px;
+  max-width: 62%;
+  padding: 29px 115px 29px 72px;
 }
 
 .apttext__left-title {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .apt-second-title {
@@ -975,7 +983,7 @@ p {
 }
 
 .apttext__left-descr {
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 }
 
 .apttext__left-text {
@@ -1012,7 +1020,7 @@ p {
 
 .apttext__right {
   background: #F8F4F2;
-  padding: 33px 94px 58px 45px;
+  padding: 33px 70px 50px 33px;
 }
 
 .apttext__right-title {
@@ -1022,7 +1030,7 @@ p {
 .apttext__right-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(230px, 1fr));
-  grid-column-gap: 94px;
+  grid-column-gap: 76px;
   grid-row-gap: 40px;
 }
 
@@ -1081,6 +1089,7 @@ p {
 }
 
 .apttext__right-text {
+  margin-bottom: 6px;
   color: #000;
   font-family: 'Jost';
   font-size: 16px;
@@ -1089,6 +1098,7 @@ p {
   line-height: 27.5px; /* 171.875% */
 }
 .apttext__right-offer {
+  margin-bottom: 10px;
   color: #B28A77;
   font-family: 'Jost';
   font-size: 12px;
@@ -1108,7 +1118,7 @@ p {
 /*-------- find --------*/
 
 .find__container  {
-  padding: 50px 0;
+  padding: 35px 0 62px 0;
   border-top: 1px solid #E8C8B9;
   border-bottom: 1px solid #E8C8B9;;
 }
@@ -1120,11 +1130,12 @@ p {
 
 .find__left {
   width: 50%;
-  padding-left: 200px;
+  padding-left: 138px;
   text-align: center;
 }
 
 .find__left-title {
+  margin-left: -32px;
   margin-bottom: 40px;
 }
 
@@ -1141,14 +1152,10 @@ p {
   line-height: 45px; /* 150% */
 }
 
-
-.find__left-two {
-  justify-content: space-between;
-}
-
 .find__left-first {
   padding-left: 98px;
-  width: 81%;
+  width: 68%;
+  margin-right: 20px;
 }
 
 .find__left-text {
@@ -1161,9 +1168,8 @@ p {
   line-height: 36px; /* 225% */
 }
 
-
 .find__right-form {
-  padding: 70px 75px 31px 75px;
+  padding: 43px 72px 32px 78px;
   border: 1px solid #E8C8B9;
 }
 
@@ -1175,6 +1181,13 @@ p {
   font-weight: 300;
   line-height: 0px; /* 0% */
 }
+
+.find__right-input {
+  min-width: 547px;
+  min-height: 89px;
+}
+
+
 
 /*-------- another --------*/
 
@@ -1220,12 +1233,8 @@ p {
   grid-gap: 45px;
 }
 
-.another__item-div img {
-  margin-bottom: 10px;
-}
-
 .another__item-descr {
-  margin-bottom: 20px;
+  margin-bottom: 6px;
   color: #744D3A;
   font-family: 'Jost';
   font-size: 18px;
@@ -1241,4 +1250,156 @@ p {
   font-style: normal;
   font-weight: 400;
   line-height: 45px; /* 187.5% */
+}
+
+/*-------- complex --------*/
+
+.complex-name {
+  letter-spacing: 6.6px;
+  text-transform: uppercase;
+}
+
+.complex-left-slider {
+  max-width: 38%;
+}
+
+.slider__right-descr {
+  color: #685C56;
+  font-family: 'Jost';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 27px; /* 150% */
+}
+
+.ff {
+  margin-bottom: 20px;
+}
+
+.complex-slider {
+  margin-bottom: 20px;
+}
+
+.complex-slider .swiper-pagination-fraction {
+  top: 90%;
+  color: #FFF;
+  font-family: 'Jost';
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 136.364% */
+}
+
+.complex-slider .swiper-button-next,
+.complex-slider .swiper-button-prev {
+  top: 93%;
+}
+
+.complex-slider-center {
+  background-image: url('../img/rectangle-complex-slider.svg');
+}
+
+.complexlist__name {
+  margin-bottom: 14px;
+  color: #000;
+  font-family: 'Jost';
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.complexlist__btn-wrapper {
+  gap: 14px;
+  margin-bottom: 17px;
+}
+
+.complexlist__btn-filter {
+  color: #FFF;
+  font-family: 'Jost';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 42px;
+  display: flex;
+  padding: 9px 50px 10px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+  background: linear-gradient(88deg, #BC856A 0%, #E5A484 82.71%);
+}
+
+.complexlist__btn-filter::before {
+  content: url('../img/filter.svg');
+  margin-top: 5px;
+}
+
+.complexlist__btn-sort {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 9px 50px 10px 40px;
+  border: 1px solid #E8C8B9;
+  color: #685C56;
+  font-family: 'Jost';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 36px; /* 257.143% */
+}
+
+.complexlist__btn-sort::before {
+  content: url('../img/sort-before.svg');
+  /* margin-right: 5px; */
+}
+
+.complexlist__btn-sort::after {
+  content: url('../img/sort-after.svg');
+  /* margin-left: 5px; */
+}
+
+.complexlist__btn-wrapper2 {
+  gap: 10px;
+}
+
+.complexlist__btn-brown {
+  border-radius: 5px;
+  background: #B28A77;
+  display: flex;
+  height: 28px;
+  padding: 0px 15px 0px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #FFF;
+  font-family: 'Jost';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; /* 257.143% */
+}
+
+.complexlist__btn-brown::before {
+  content: url('../img/brown-before.svg')
+}
+
+.complexlist__btn-light {
+  border-radius: 5px;
+  border: 1px solid #B28A77;
+  display: flex;
+  height: 28px;
+  padding: 0px 15px 0px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #B28A77;
+  font-family: 'Jost';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; /* 257.143% */
+}
+
+.complexlist__btn-light::before {
+  content: url('../img/light-before.svg')
 }

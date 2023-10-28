@@ -16,6 +16,16 @@
 
   <header class="header">
     <div class="container">
+      <div class="header__nav-mobile ">
+        <div class="header__nav-mobile-flex">
+          <ul class="header__nav-mobile-list list-reset flex">
+            <li class="header__nav-mobile-item">О проекте</li>
+            <li class="header__nav-mobile-item">недвижимость</li>
+            <li class="header__nav-mobile-item">Новости</li>
+          </ul>
+          <button id="modal-btn1" class="header__btn-mob btn btn-reset">Заказать звонок</button>
+        </div>
+      </div>
       <div class="header__container flex">
         <img src="img/logo-1920.svg" alt="Логотип" class="header__logo-apt">
         <nav class="header__nav nav-apt">
@@ -73,10 +83,10 @@
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide">
-                <img src="img/apt1.jpg" alt="Фотография квартиры">
+                <img  src="img/apt1.jpg" alt="Фотография квартиры">
               </div>
               <div class="swiper-slide">
-                <div id="map" style="width: 1062px; height: 720px"></div>
+                <div id="map" style="width: 1062px; height: 720px" class="slider__map"></div>
               </div>
               <div class="swiper-slide">
                 <img src="img/apt3.jpg" alt="Планировка квартиры">
@@ -215,8 +225,8 @@
             </div>
             <div class="find__right">
               <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="find__right-form modal-form" id="form">
-                <input type="text" class="find__righ modal-input" placeholder="Ваше имя" name="name">
-                <input type="tel" class="find__right modal-input input-tel" placeholder="+7 (999) 999 99 99" name="tel" inputmode="text">
+                <input type="text" class="find__right-input modal-input" placeholder="Ваше имя" name="name">
+                <input type="tel" class="find__right-input modal-input input-tel" placeholder="+7 (999) 999 99 99" name="tel" inputmode="text">
 
                 <div class="find__right-p p">
                   <label class="find__right-label label">
@@ -266,14 +276,14 @@
                 <p class="another__item-price">98 900 000 руб</p>
               </div>
             </li>
-            <li class="another__item">
+            <li class="another__item last-1100">
               <div class="another__item-div">
                 <img src="img/4.jpg" alt="Фото квартиры">
                 <p class="another__item-descr">4-комнатная квартира на&nbsp;улице Пресненский вал, 27с2, 7&nbsp;этаж, жилой комплекс &laquo;Republic&raquo;</p>
                 <p class="another__item-price">57 300 000 руб</p>
               </div>
             </li>
-            <li class="another__item">
+            <li class="another__item last-1400">
               <div class="another__item-div">
                 <img src="img/5.jpg" alt="Фото квартиры">
                 <p class="another__item-descr">3-комнатная квартира на&nbsp;улице Симоновская набережная, 2/1, 9&nbsp;этаж, жилой комплекс &laquo;F&Oslash;RST&raquo;</p>

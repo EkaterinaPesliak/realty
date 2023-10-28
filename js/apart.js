@@ -1,12 +1,12 @@
 const valueRange = document.querySelector('#valueRange')
-const valueInput = document.querySelector('#valueInput')
-const durationRange = document.querySelector('#durationRange')
-const durationInput = document.querySelector('#durationInput')
-const firstRange = document.querySelector('#firstRange')
-const firstInput = document.querySelector('#firstInput')
-const allInputs = document.querySelectorAll('.inputClass')
-const totalSpan = document.querySelector('#totalSpan')
-const formatter = new Intl.NumberFormat('ru')
+      valueInput = document.querySelector('#valueInput')
+      durationRange = document.querySelector('#durationRange')
+      durationInput = document.querySelector('#durationInput')
+      firstRange = document.querySelector('#firstRange')
+      firstInput = document.querySelector('#firstInput')
+      allInputs = document.querySelectorAll('.inputClass')
+      totalSpan = document.querySelector('#totalSpan')
+      formatter = new Intl.NumberFormat('ru')
 
 
 valueRange.addEventListener('input', function() {
@@ -25,12 +25,13 @@ durationInput.addEventListener('input', function() {
 firstRange.addEventListener('input', function() {
   firstInput.value = firstRange.value
 })
+
 firstInput.addEventListener('input', function() {
   firstRange.value = firstInput.value
 })
 
 function calc() {
-  let totalAmount = parseInt(valueInput.value) - parseInt(firstInput.value)
+  let totalAmount = valueInput.value - firstInput.value
   totalSpan.innerText = formatter.format(totalAmount)
 }
 
@@ -119,9 +120,5 @@ document.getElementById("btn-call").addEventListener('click', function(e) {
 })
 
 document.getElementById("btn-slider-call").addEventListener('click', function() {
-  document.getElementById("modalFirst").classList.add("open")
-})
-
-document.getElementById("modal-btn1").addEventListener('click', function() {
   document.getElementById("modalFirst").classList.add("open")
 })
