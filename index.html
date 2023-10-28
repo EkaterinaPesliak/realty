@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Недвижимость Москвы</title>
+  <link type="image/x-icon" href="img/circle.ico" rel="shortcut icon">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="header__nav-mobile ">
+      <div class="header__nav-mobile-flex">
+        <ul class="header__nav-mobile-list list-reset flex">
+          <li class="header__nav-mobile-item">О проекте</li>
+          <li class="header__nav-mobile-item">недвижимость</li>
+          <li class="header__nav-mobile-item">Новости</li>
+        </ul>
+        <button id="modal-btn1" class="header__btn-mob btn btn-reset">Заказать звонок</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="header__container flex">
+        <picture class="header__picture">
+          <source srcset="img/logo-400.svg" media="(max-width: 500px)" class="header__logo">
+          <source srcset="img/logo-tablet.png" media="(max-width: 1301px)" class="header__logo">
+          <source srcset="img/logo-1920.svg" media="(max-width: 2000px)" class="header__logo">
+          <img src="img/logo-1920.svg" alt="Логотип" class="header__logo">
+        </picture>
+        <nav class="header__nav nav">
+          <ul class="header__nav-list list-reset flex">
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Недвижимость</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">О проекте</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Новости</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__contacts">
+          <img class="header__svg svg-phone" src="img/phone.svg" alt="Телефон">
+          <a href="tel:+78003005500" class="header__phone phone"> 8 800 300 55 00</a>
+          <button id="modal-btn" class="header__btn btn btn-reset">Заказать звонок</button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <div class="container">
+        <div class="hero__container">
+          <div class="hero__content">
+            <h1 class="hero__title">недвижимость Москвы</h1>
+            <p class="hero__descr">Премиальные объекты в&nbsp;центре Москвы. Высший стандарт комфорта и&nbsp;уровня жизни</p>
+            <button class="hero__btn btn-reset">Оставить заявку на&nbsp;подбор</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="business">
+      <div class="container">
+        <div class="business__container">
+          <div class="business__main same">
+            <div class="abs-descr">
+              <div class="abs-descr-content">
+                <h2 class="second-title">бизнес</h2>
+                <p class="text">Комфорт и функциональность в&nbsp;сердце города</p>
+              </div>
+            </div>
+
+            <div class="column flex">
+              <div class="right">
+                <a href="#" class="btn-all"> <span> Все объекты бизнес </span>  <img src="img/arrow.svg" alt="Стрелка"> </a>
+              </div>
+
+                <ul class="list-reset flex">
+                  <li class="cards-item">
+                    <div class="obj flex">
+                      <picture class="bg">
+                        <source srcset="img/bus1-400.jpg" media="(max-width: 600px)" class="img">
+                        <source srcset="img/bus1-1400.jpg" media="(max-width: 1301px)" class="img">
+                        <source srcset="img/bus1.jpg" media="(max-width: 2000px)" class="img">
+                        <img src="img/bus1.jpg" alt="Бизнес" class="bus1">
+                      </picture>
+                      <div class="obj-descr">
+                        <div class="obj-descr-main flex">
+                          <span class="obj-name">F&Oslash;RST</span>
+                          <span class="obj-400">2 комнаты</span>
+                        </div>
+                        <div class="obj-descr-main last flex">
+                          <span class="obj-400">ЮАО</span>
+                          <span class="obj-400">53.5 м2 площадь</span>
+                        </div>
+                        <div class="obj-descr-main flex">
+                          <span class="obj-price">от 27 500 000 руб</span>
+                          <a href="#" class="obj-link">Оставить заявку</a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="cards-item">
+                    <div class="obj flex">
+                      <picture class="bg">
+                        <source srcset="img/bus2-400.jpg" media="(max-width: 600px)" class="img">
+                        <source srcset="img/bus2-1400.jpg" media="(max-width: 1301px)" class="img">
+                        <source srcset="img/bus2.jpg" media="(max-width: 2000px)" class="img">
+                        <img src="img/bus2.jpg" alt="Бизнес">
+                      </picture>
+                      <div class="obj-descr">
+                        <div class="obj-descr-main flex">
+                          <span class="obj-name">Portland</span>
+                          <span class="obj-400">3 комнаты</span>
+                        </div>
+                        <div class="obj-descr-main last flex">
+                          <span class="obj-400">ЮВАО</span>
+                          <span class="obj-400">78.9 м2 площадь</span>
+                        </div>
+                        <div class="obj-descr-main flex">
+                          <span class="obj-price">от 22 300 000 руб</span>
+                          <a href="#" class="obj-link">Оставить заявку</a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="premium">
+      <div class="container">
+        <div class="premium__container">
+          <div class="premium__main same">
+
+
+            <div class="premium__column flex">
+              <div class="right">
+                <a href="#" class="btn-all"> <span> Все объекты премиум </span>  <img src="img/arrow.svg" alt="Стрелка"> </a>
+              </div>
+
+              <ul class="list-reset flex">
+                <li class="cards-item">
+                  <div class="obj flex">
+                    <picture class="bg">
+                      <source srcset="img/prem1-400.jpg" media="(max-width: 600px)" class="img">
+                      <source srcset="img/prem1-1400.jpg" media="(max-width: 1301px)" class="img">
+                      <source srcset="img/prem1.jpg" media="(max-width: 2000px)" class="img">
+                      <img src="img/prem1.jpg" alt="Бизнес">
+                    </picture>
+                    <div class="obj-descr">
+                      <div class="obj-descr-main flex">
+                        <span class="obj-name">REPUBLIC</span>
+                        <span class="obj-400">3 комнаты</span>
+                      </div>
+                      <div class="obj-descr-main last flex">
+                        <span class="obj-400">ЦАО</span>
+                        <span class="obj-400">63.5 м2 площадь</span>
+                      </div>
+                      <div class="obj-descr-main flex">
+                        <span class="obj-price">от 57 800 000 руб</span>
+                        <a href="#" class="obj-link">Оставить заявку</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="cards-item">
+                  <div class="obj flex">
+                    <picture class="bg">
+                      <source srcset="img/prem2-400.jpg" media="(max-width: 600px)" class="img">
+                      <source srcset="img/prem2-1400.jpg" media="(max-width: 1301px)" class="img">
+                      <source srcset="img/prem2.jpg" media="(max-width: 2000px)" class="img">
+                      <img src="img/prem2.jpg" alt="Бизнес">
+                    </picture>
+                    <div class="obj-descr">
+                      <div class="obj-descr-main flex">
+                        <span class="obj-name">Moments</span>
+                        <span class="obj-400">СЗАО</span>
+                      </div>
+                      <div class="obj-descr-main last flex">
+                        <span class="obj-400">ЮВАО</span>
+                        <span class="obj-400">82.5 м2 площадь</span>
+                      </div>
+                      <div class="obj-descr-main flex">
+                        <span class="obj-price">от 53 200 000 руб</span>
+                        <a href="#" class="obj-link">Оставить заявку</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="premium__descr abs-descr">
+              <div class="premium__descr-content flex">
+                <div class="premium__left">
+                  <h2 class="second-title">Премиум</h2>
+                  <p class="text">Изысканный дизайн и&nbsp;превосходные удобства</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="delux">
+      <div class="container">
+        <div class="delux__container">
+          <div class="delux__main same">
+            <div class="abs-descr z">
+              <div class="abs-descr-content">
+                <h2 class="second-title">Делюкс</h2>
+                <p class="text">Непревзойденная роскошь с эксклюзивными преимуществами</p>
+              </div>
+            </div>
+
+            <div class="column flex">
+              <div class="right">
+                <a href="#" class="btn-all"> <span> Все объекты делюкс </span>  <img src="img/arrow.svg" alt="Стрелка"> </a>
+              </div>
+
+                <ul class="list-reset delux__cards-list flex">
+                  <li class="cards-item">
+                    <div class="obj flex">
+                      <picture class="bg">
+                        <source srcset="img/del1-400.jpg" media="(max-width: 600px)" class="img">
+                        <source srcset="img/del1-1400.jpg" media="(max-width: 1301px)" class="img">
+                        <source srcset="img/del-1920-1.jpg" media="(max-width: 2000px)" class="img">
+                        <img src="img/del-1920-1.jpg" alt="Бизнес">
+                      </picture>
+                      <div class="obj-descr">
+                        <div class="obj-descr-main flex">
+                          <span class="obj-name">Ильинка 3/8</span>
+                          <span class="obj-400">7 комнат</span>
+                        </div>
+                        <div class="obj-descr-main last flex">
+                          <span class="obj-400">ЦАО</span>
+                          <span class="obj-400">202.5 м2 площадь</span>
+                        </div>
+                        <div class="obj-descr-main flex">
+                          <span class="obj-price">от 486 490 000 руб</span>
+                          <a href="#" class="obj-link">Оставить заявку</a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="cards-item">
+                    <div class="obj flex">
+                      <picture class="bg">
+                        <source srcset="img/del2-400.jpg" media="(max-width: 600px)" class="img">
+                        <source srcset="img/del2-1400.jpg" media="(max-width: 1301px)" class="img">
+                        <source srcset="img/del-1920-2.jpg" media="(max-width: 2000px)" class="img">
+                        <img src="img/del-1920-2.jpg" alt="Бизнес">
+                      </picture>
+                      <div class="obj-descr">
+                        <div class="obj-descr-main flex">
+                          <span class="obj-name">Чистые Пруды</span>
+                          <span class="obj-400">6 комнат</span>
+                        </div>
+                        <div class="obj-descr-main last flex">
+                          <span class="obj-400">ЦАО</span>
+                          <span class="obj-400">193.1 м2 площадь</span>
+                        </div>
+                        <div class="obj-descr-main flex">
+                          <span class="obj-price">от 563 800 000 руб</span>
+                          <a href="#" class="obj-link">Оставить заявку</a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="last">
+      <div class="container">
+        <div class="last__container">
+          <div class="last__title-center flex">
+            <svg width="170" height="1" viewBox="0 0 170 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line y1="0.5" x2="170" y2="0.5" stroke="#E8C8B9"/>
+            </svg>
+            <h2 class="last__title">ПРЕМИАЛЬНАЯ Роскошь в&nbsp;Обслуживании</h2>
+            <svg width="170" height="1" viewBox="0 0 170 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line y1="0.5" x2="170" y2="0.5" stroke="#E8C8B9"/>
+            </svg>
+          </div>
+
+          <p class="last__descr">Каждая деталь имеет значение</p>
+
+          <div class="last__rectangle">
+            <picture class="last__pic">
+              <source srcset="img/last-400.jpg" media="(max-width: 500px)" class="last__img">
+              <source srcset="img/last-1400.jpg" media="(max-width: 1301px)" class="last__img">
+              <source srcset="img/last-1920.jpg" media="(max-width: 2000px)" class="last__img">
+              <img src="img/last-1920.jpg" class="last__img-main" alt="Картинка">
+            </picture>
+
+            <p class="last__text">Наш подход гарантирует, что каждый аспект вашей покупки будет учтён. От&nbsp;персональных консультаций и&nbsp;эксклюзивных показов до&nbsp;полного юридического сопровождения&nbsp;&mdash; мы&nbsp;с&nbsp;уважением относимся к&nbsp;вашим уникальным потребностям. С&nbsp;нами вы&nbsp;не&nbsp;просто выбираете жильё; вы&nbsp;инвестируете в&nbsp;качество жизни. Соблюдение конфиденциальности и&nbsp;высокий профессионализм делают наш сервис идеальным выбором для тех, кто стремится к&nbsp;исключительности в&nbsp;каждой детали.</p>
+            <img src="img/circle.svg" alt="Декор" class="circle">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal" id="modalFirst">
+      <div class="modal-box">
+        <button id="modal-close" class="btn-reset modal-close-btn">
+          <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0.353553" y1="0.646447" x2="20.3536" y2="20.6464" stroke="black"/>
+            <line x1="20.3536" y1="1.35355" x2="0.353554" y2="21.3536" stroke="black"/>
+          </svg>
+        </button>
+        <div class="modal-rectangle ">
+          <p class="modal-title">Заказать звонок</p>
+          <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="modal-form " id="form">
+            <input type="text" class="modal-input input-name" placeholder="Ваше имя" name="name">
+            <input type="tel" class="modal-input input-tel" placeholder="+7 (999) 999 99 99" name="tel" inputmode="text">
+
+            <div class="p">
+              <label class="label">
+                <input class="input-checkbox" type="checkbox" name="checkbox" id="check"> Даю согласие на обработку персональных данных
+                <span></span>
+              </label>
+            </div>
+            <button id="modal-btn-thanks" class="modal-btn" type="submit">Перезвоните мне</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-thanks" id="modalSecond">
+      <div class="modal-box">
+        <button id="modal-close2" class="btn-reset modal-close-btn">
+          <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0.353553" y1="0.646447" x2="20.3536" y2="20.6464" stroke="black"/>
+            <line x1="20.3536" y1="1.35355" x2="0.353554" y2="21.3536" stroke="black"/>
+          </svg>
+        </button>
+        <div class="modal-rectangle padding">
+          <p class="modal-title thanks-title">Заказать звонок</p>
+          <p class="modal-thanks__text">Ваша заявка отправлена. <br> Мы&nbsp;перезвоним вам в&nbsp;ближайшее время.</p>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__container flex">
+        <div class="footer__left">
+          <picture class="footer__picture">
+            <source srcset="img/logo-400.svg" media="(max-width: 500px)" >
+            <source srcset="img/logo-tablet.png" media="(max-width: 1301px)" >
+            <source srcset="img/logo-1920.svg" media="(max-width: 2000px)" >
+            <img src="img/logo-1920.svg" alt="Логотип" >
+          </picture>
+        </div>
+        <div class="footer__center">
+          <nav class="footer__nav">
+            <ul class="footer__nav-list list-reset flex">
+              <li class="footer__nav-item"> <a href="#" class="footer__nav-link">О проекте</a> </li>
+              <li class="footer__nav-item"> <a href="#" class="footer__nav-link">Недвижимость</a> </li>
+              <li class="footer__nav-item"> <a href="#" class="footer__nav-link">Новости</a> </li>
+            </ul>
+          </nav>
+
+          <div class="footer__links">
+            <a class="footer__link">Политика конфиденциальности</a>  <span class="footer__link">|</span>
+            <a class="footer__link">Пользовательское соглашение </a>
+          </div>
+        </div>
+        <div class="footer__right flex">
+          <a href="tel:+78003005500" class="footer__phone phone"> 8 800 300 55 00</a>
+          <div class="footer__links-mob">
+            <a class="footer__link">Политика конфиденциальности</a>  <span class="footer__link">|</span>
+            <a class="footer__link">Пользовательское соглашение </a>
+          </div>
+          <button class="footer__btn btn btn-reset">Обратная связь</button>
+          <ul class="footer__sm list-reset flex">
+            <li class="footer__sm-item"> <a href="#"> <img src="img/wa.png" alt="Wa" class="sm"> </a> </li>
+            <li class="footer__sm-item"> <a href="#"> <img src="img/tme.svg" alt="telegram" class="sm"> </a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

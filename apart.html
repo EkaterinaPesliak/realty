@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Квартира</title>
+  <link type="image/x-icon" href="img/circle.ico" rel="shortcut icon">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <script defer src="js/apart.js"></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__container flex">
+        <img src="img/logo-1920.svg" alt="Логотип" class="header__logo-apt">
+        <nav class="header__nav nav-apt">
+          <ul class="header__nav-list list-reset flex">
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Недвижимость</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">О проекте</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Новости</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__contacts">
+          <img class="header__svg svg-phone" src="img/phone.svg" alt="Телефон">
+          <a href="tel:+78003005500" class="header__phone phone"> 8 800 300 55 00</a>
+          <button id="modal-btn" class="header__btn btn btn-reset">Заказать звонок</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="descr">
+      <div class="container">
+        <div class="descr__container">
+          <div class="descr__top">
+            <ul class="descr__breadcrumb list-reset flex breadcrumb">
+              <li class="descr__breadcrumb-item"><a href="#" class="descr__breadcrumb-link">Главная </a></li>
+              <li class="descr__breadcrumb-item"><a href="#" class="descr__breadcrumb-link">Жилые комплексы </a></li>
+              <li class="descr__breadcrumb-item"><a href="#" class="descr__breadcrumb-link">Ильинка 3/8 </a></li>
+              <li class="descr__breadcrumb-item"> <span class="descr__breadcrumb-link active">10-комнатная квартира на&nbsp;улице Ильинка, строение 2, 3&nbsp;этаж, в&nbsp;жилом комплексе &laquo;Ильинка 3/8&raquo;</span> </li>
+            </ul>
+            <p class="descr__name">10-комнатная квартира на&nbsp;улице Ильинка, строение 2, 3&nbsp;этаж, в&nbsp;жилом комплексе &laquo;Ильинка 3/8&raquo;</p>
+          </div>
+          <button class="descr__btn-back btn-reset">
+            <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.999999 5.5L0.646446 5.85355L0.292892 5.5L0.646446 5.14645L0.999999 5.5ZM17.5 13.5C17.5 13.7761 17.2761 14 17 14C16.7239 14 16.5 13.7761 16.5 13.5L17.5 13.5ZM5.64645 10.8536L0.646446 5.85355L1.35355 5.14645L6.35355 10.1464L5.64645 10.8536ZM0.646446 5.14645L5.64645 0.146446L6.35355 0.853553L1.35355 5.85355L0.646446 5.14645ZM0.999999 5L11 5L11 6L0.999999 6L0.999999 5ZM17.5 11.5L17.5 13.5L16.5 13.5L16.5 11.5L17.5 11.5ZM11 5C14.5898 5 17.5 7.91015 17.5 11.5L16.5 11.5C16.5 8.46243 14.0376 6 11 6L11 5Z" fill="#B38A77"/>
+            </svg>
+            В каталог
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="slider">
+      <div class="container">
+        <div class="slider__center flex">
+        <div class="slider__left">
+
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="img/apt1.jpg" alt="Фотография квартиры">
+              </div>
+              <div class="swiper-slide">
+                <div id="map" style="width: 1062px; height: 720px"></div>
+              </div>
+              <div class="swiper-slide">
+                <img src="img/apt3.jpg" alt="Планировка квартиры">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <svg class="swiper-button-prev swiper__btn-prev" xmlns="http://www.w3.org/2000/svg" width="44" height="42" viewBox="0 0 44 42" fill="none">
+              <ellipse cx="21.4001" cy="20.9568" rx="21.4001" ry="20.9568" transform="matrix(1 0 0 -1 0.546875 41.9136)" fill="white"/>
+              <path d="M11.6758 20.9569L11.3259 20.5997L10.9612 20.9569L11.3259 21.3142L11.6758 20.9569ZM33.0759 21.4569C33.352 21.4569 33.5759 21.2331 33.5759 20.9569C33.5759 20.6808 33.352 20.4569 33.0759 20.4569V21.4569ZM19.886 12.217L11.3259 20.5997L12.0256 21.3142L20.5857 12.9315L19.886 12.217ZM11.3259 21.3142L19.886 29.6969L20.5857 28.9824L12.0256 20.5997L11.3259 21.3142ZM11.6758 21.4569H33.0759V20.4569L11.6758 20.4569V21.4569Z" fill="#685C56"/>
+            </svg>
+            <svg class="swiper-button-next swiper__btn-next" width="44" height="42" viewBox="0 0 44 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="21.4001" cy="20.9568" rx="21.4001" ry="20.9568" transform="matrix(1 0 0 -1 0.226562 41.9136)" fill="white"/>
+              <path d="M31.8984 20.9566L32.2483 21.3139L32.6131 20.9566L32.2483 20.5994L31.8984 20.9566ZM10.4983 20.4566C10.2222 20.4566 9.99833 20.6805 9.99833 20.9566C9.99833 21.2328 10.2222 21.4566 10.4983 21.4566V20.4566ZM23.6882 29.6966L32.2483 21.3139L31.5486 20.5994L22.9886 28.9821L23.6882 29.6966ZM32.2483 20.5994L23.6882 12.2167L22.9886 12.9312L31.5486 21.3139L32.2483 20.5994ZM31.8984 20.4566H10.4983V21.4566H31.8984V20.4566Z" fill="#685C56"/>
+            </svg>
+          </div>
+
+        </div>
+        <div class="slider__right">
+          <img src="img/name.jpg" alt="Ильинка 38" class="slider__right-img">
+          <button id="btn-card" class="slider__right-btn-card btn-reset">Показать на карте</button>
+          <p class="slider__right-p bold-p">Адрес: <span class="slider__right-span">ЦАО, улица Ильинка, строение 2</span> </p>
+          <div class="slider__right-span">
+            <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="7" cy="7.5" r="7" fill="#A5167F"/>
+            </svg>
+            <span class="slider__right-text">Площадь Революции 320 м</span>
+            <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="7" cy="7.5" r="7" fill="#A5167F"/>
+            </svg>
+            <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="7" cy="7.5" r="7" fill="#FECE16"/>
+            </svg>
+            <span class="slider__right-text">Китай-город 440 м</span>
+          </div>
+          <button class="slider__right-btn btn-reset" id="btn-layout">Показать планировку</button>
+          <ul class="slider__right-list list-reset">
+            <li class="slider__right-item bold-p">
+              Площадь:
+              <span class="slider__right-span"> 321.7 м2</span>
+            </li>
+            <li class="slider__right-item bold-p">
+              Количество спален:
+              <span class="slider__right-span">10</span>
+            </li>
+            <li class="slider__right-item bold-p">
+              Этаж
+              <span class="slider__right-span"> 3/5</span>
+            </li>
+            <li class="slider__right-item bold-p">
+              Высота потолков:
+              <span class="slider__right-span">3.7 м</span>
+            </li>
+            <li class="slider__right-item bold-p">
+              Количество санузлов:
+              <span class="slider__right-span">2</span>
+            </li>
+            <li class="slider__right-item bold-p">
+              Отделка:
+              <span class="slider__right-span">Чистовая</span>
+            </li>
+            <li class="slider__right-item bold-p">
+              Год сдачи:
+              <span class="slider__right-span">2й квартал 2024</span>
+            </li>
+            <li class="slider__right-item bold-p">
+              Тип сделки:
+              <span class="slider__right-span">100% оплата, ипотека</span>
+            </li>
+          </ul>
+          <p class="slider__right-textValue">Стоимость</p>
+          <p class="slider__right-textNumber">1 538 600 000 руб. </p>
+          <button id="btn-slider-call" class="slider__right-btn-call modal-btn " type="submit">Оставить заявку</button>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="apttext">
+      <div class="container">
+        <div class="apttext__container">
+          <div class="apttext__center flex">
+            <div class="apttext__left">
+              <h2 class="apttext__left-title apt-second-title">Квартира класса Делюкс</h2>
+              <p class="apttext__left-descr coursive">Элитные квартиры в&nbsp;историческом центре Москвы</p>
+              <p class="apttext__left-text lh">&laquo;Ильинка, 3/8&raquo;&nbsp;&mdash; белокаменный комплекс эксклюзивных малоэтажных клубных особняков в&nbsp;300 метрах от&nbsp;Кремля на&nbsp;одной из&nbsp;старейших деловых улиц столицы. Три из&nbsp;семи особняков&nbsp;&mdash; трехэтажные исторические здания XIX&nbsp;века, которые будут тщательно восстановлены.</p>
+              <p class="apttext__left-text lh2">Архитектурная концепция новых корпусов проекта разработана российским бюро Kleinwelt Architekten. Она предполагает лаконичное решение белокаменных фасадов с&nbsp;арочными акцентами и&nbsp;деталями из&nbsp;благородной патинированной латуни и&nbsp;дерева, гармонирующее с&nbsp;историческими особняками. Девелопер проекта&nbsp;&mdash; Sminex-Интеко, который специализируется на&nbsp;создании комфортной и&nbsp;престижной среды для жизни и&nbsp;работы.</p>
+              <a href="#" class="apttext__left-link">На&nbsp;страницу жилого комплекса &laquo;Ильинка 3/8&raquo;</a>
+            </div>
+            <div class="apttext__right">
+              <h2 class="apt-second-title apttext__right-title">Рассчитайте вашу ипотеку:</h2>
+              <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="apttext__right-form" id="calculateForm">
+                <ul class="apttext__right-list list-reset">
+                  <li class="apttext__right-item flex">
+                    <label for="valueInput" class="apttext__right-label">Стоимость квартиры</label>
+                    <input type="range" class="apttext__right-valueInput inputClass" id="valueRange" min="0" max="1538600000" value="1538600000">
+                    <input type="number" class="apttext__right-input inputClass" id="valueInput" min="0" max="1538600000" value="1538600000">
+                  </li>
+                  <li class="apttext__right-item flex">
+                    <label for="durationInput" class="apttext__right-label">Желаемый срок кредита</label>
+                    <input type="range" class="apttext__right-valueInput inputClass" id="durationRange" min="0" max="10" value="10">
+                    <input type="number" class="apttext__right-input inputClass" id="durationInput" min="0" max="10" value="10">
+                  </li>
+                  <li class="apttext__right-item flex">
+                    <label for="valueInput" class="apttext__right-label">Ваш первоначальный взнос</label>
+                    <input type="range" class="apttext__right-valueInput inputClass" id="firstRange" min="0" max="500000000" value="500000000">
+                    <input type="number" class="apttext__right-input inputClass" id="firstInput" min="0" max="500000000" value="500000000">
+                  </li>
+                  <li class="apttext__right-item flex">
+                    <p class="apttext__right-text">Ваш кредит <span id="totalSpan"></span> руб</p>
+                    <p class="apttext__right-offer">Расчёт кредита не является публичной офертой</p>
+                    <button id="btnCalculate" class="apttext__right-btn apt-btn modal-btn" type="submit">Получить предложение</button>
+                  </li>
+                </ul>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="find">
+      <div class="container">
+        <div class="find__container">
+          <div class="find__center flex">
+            <div class="find__left">
+              <h3 class="find__left-title third-title">Не&nbsp;нашли, что искали?</h3>
+              <p class="find__left-descr coursive">Наша компания поможет вам с&nbsp;идеальным выбором</p>
+              <div class="find__left-two flex">
+                <div class="find__left-first">
+                  <p class="find__left-text">Просто оставьте заявку на&nbsp;подбор и&nbsp;наши специалисты перезвонят вам. Вы&nbsp;получите наиболее выгодные и&nbsp;удачные предложения в&nbsp;соответствии с&nbsp;вашими запросами, где все тонкости ваших требований и&nbsp;вкусов будут учтены.</p>
+                </div>
+                <div class="find__left-sec">
+                  <img src="img/circle.svg" alt="Логотип">
+                </div>
+              </div>
+            </div>
+            <div class="find__right">
+              <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="find__right-form modal-form" id="form">
+                <input type="text" class="find__righ modal-input" placeholder="Ваше имя" name="name">
+                <input type="tel" class="find__right modal-input input-tel" placeholder="+7 (999) 999 99 99" name="tel" inputmode="text">
+
+                <div class="find__right-p p">
+                  <label class="find__right-label label">
+                    <input class="find__right-input-checkbox input-checkbox" type="checkbox" name="checkbox" id="check"> Даю согласие на обработку персональных данных
+                    <span></span>
+                  </label>
+                </div>
+                <button id="btn-call" class="find__right-btn apt-btn modal-btn" type="submit">Перезвоните мне</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="another">
+      <div class="container">
+        <div class="another__container">
+          <div class="another__top flex">
+            <h3 class="another__title third-title">другие интересные предложения:</h3>
+            <button class="btn-reset another__btn">
+              Посмотреть все предложения
+              <svg width="25" height="8" viewBox="0 0 25 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24.3536 4.35355C24.5488 4.15829 24.5488 3.84171 24.3536 3.64644L21.1716 0.464464C20.9763 0.269202 20.6597 0.269202 20.4645 0.464464C20.2692 0.659727 20.2692 0.976309 20.4645 1.17157L23.2929 4L20.4645 6.82843C20.2692 7.02369 20.2692 7.34027 20.4645 7.53553C20.6597 7.73079 20.9763 7.73079 21.1716 7.53553L24.3536 4.35355ZM4.37114e-08 4.5L24 4.5L24 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z" fill="#B38A77"/>
+              </svg>
+            </button>
+          </div>
+          <ul class="another__list list-reset">
+            <li class="another__item">
+              <div class="another__item-div">
+                <img src="img/1.jpg" alt="Фото квартиры">
+                <p class="another__item-descr">3-комнатная квартира на&nbsp;улице Симоновская набережная, 2/1, 9&nbsp;этаж, жилой комплекс &laquo;F&Oslash;RST&raquo;</p>
+                <p class="another__item-price">27 500 000 руб</p>
+              </div>
+            </li>
+            <li class="another__item">
+              <div class="another__item-div">
+                <img src="img/2.jpg" alt="Фото квартиры">
+                <p class="another__item-descr">4-комнатная квартира на&nbsp;улице Уланский переулок, 14-а, 10&nbsp;этаж, жилой комплекс &laquo;Portland&raquo;</p>
+                <p class="another__item-price">57 500 000 руб</p>
+              </div>
+            </li>
+            <li class="another__item">
+              <div class="another__item-div">
+                <img src="img/3.jpg" alt="Фото квартиры">
+                <p class="another__item-descr">6-комнатная квартира на&nbsp;улице Волоколамское шоссе, 28, 10&nbsp;этаж, жилой комплекс &laquo;Moments&raquo;</p>
+                <p class="another__item-price">98 900 000 руб</p>
+              </div>
+            </li>
+            <li class="another__item">
+              <div class="another__item-div">
+                <img src="img/4.jpg" alt="Фото квартиры">
+                <p class="another__item-descr">4-комнатная квартира на&nbsp;улице Пресненский вал, 27с2, 7&nbsp;этаж, жилой комплекс &laquo;Republic&raquo;</p>
+                <p class="another__item-price">57 300 000 руб</p>
+              </div>
+            </li>
+            <li class="another__item">
+              <div class="another__item-div">
+                <img src="img/5.jpg" alt="Фото квартиры">
+                <p class="another__item-descr">3-комнатная квартира на&nbsp;улице Симоновская набережная, 2/1, 9&nbsp;этаж, жилой комплекс &laquo;F&Oslash;RST&raquo;</p>
+                <p class="another__item-price">27 500 000 руб</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal" id="modalFirst">
+      <div class="modal-box">
+        <button id="modal-close" class="btn-reset modal-close-btn">
+          <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0.353553" y1="0.646447" x2="20.3536" y2="20.6464" stroke="black"/>
+            <line x1="20.3536" y1="1.35355" x2="0.353554" y2="21.3536" stroke="black"/>
+          </svg>
+        </button>
+        <div class="modal-rectangle ">
+          <p class="modal-title">Заказать звонок</p>
+          <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="modal-form " id="form2">
+            <input type="text" class="modal-input input-name" placeholder="Ваше имя" name="name">
+            <input type="tel" class="modal-input input-tel" placeholder="+7 (999) 999 99 99" name="tel" inputmode="text">
+
+            <div class="p">
+              <label class="label">
+                <input class="input-checkbox" type="checkbox" name="checkbox" id="check2"> Даю согласие на обработку персональных данных
+                <span></span>
+              </label>
+            </div>
+            <button id="modal-btn-thanks" class="modal-btn" type="submit">Перезвоните мне</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-thanks" id="modalSecond">
+      <div class="modal-box">
+        <button id="modal-close2" class="btn-reset modal-close-btn">
+          <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0.353553" y1="0.646447" x2="20.3536" y2="20.6464" stroke="black"/>
+            <line x1="20.3536" y1="1.35355" x2="0.353554" y2="21.3536" stroke="black"/>
+          </svg>
+        </button>
+        <div class="modal-rectangle padding">
+          <p class="modal-title thanks-title">Заказать звонок</p>
+          <p class="modal-thanks__text">Ваша заявка отправлена. <br> Мы&nbsp;перезвоним вам в&nbsp;ближайшее время.</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__container flex">
+        <div class="footer__left">
+          <img src="img/logo-1920.svg" alt="Логотип">
+        </div>
+        <div class="footer__center">
+          <nav class="footer__nav">
+            <ul class="footer__nav-list list-reset flex">
+              <li class="footer__nav-item"> <a href="#" class="footer__nav-link">О проекте</a> </li>
+              <li class="footer__nav-item"> <a href="#" class="footer__nav-link">Недвижимость</a> </li>
+              <li class="footer__nav-item"> <a href="#" class="footer__nav-link">Новости</a> </li>
+            </ul>
+          </nav>
+          <div class="footer__links">
+            <a class="footer__link">Политика конфиденциальности</a>  <span class="footer__link">|</span>
+            <a class="footer__link">Пользовательское соглашение </a>
+          </div>
+        </div>
+        <div class="footer__right flex">
+          <a href="tel:+78003005500" class="footer__phone phone"> 8 800 300 55 00</a>
+          <button class="footer__btn btn btn-reset">Обратная связь</button>
+          <ul class="footer__sm list-reset flex">
+            <li class="footer__sm-item"> <a href="#"> <img src="img/wa.png" alt="Wa"> </a> </li>
+            <li class="footer__sm-item"> <a href="#"> <img src="img/tme.svg" alt="telegram"> </a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=d76aed39-0403-4755-888c-6f98c449a5e2&lang=ru_RU" type="text/javascript"></script>  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</body>
+</html>
